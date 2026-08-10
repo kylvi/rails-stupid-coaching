@@ -1,1 +1,14 @@
 <h1>answer</h1>
+<div class="container mt-4">
+  <div class="card p-3 mb-3 bg-light">
+    <p class="mb-1 text-muted"><strong>You asked:</strong></p>
+    <p><em><%= @question %></em></p>
+  </div>
+
+  <div class="card p-3 mb-4 border-primary">
+    <p class="mb-1 text-primary"><strong>Coach answers:</strong></p>
+    <p class="fw-bold"><%= @answer %></p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path, class: "btn btn-secondary" %>
+</div>
